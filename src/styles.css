@@ -3,24 +3,34 @@
   text-align: center;
 }
 body {
-  background: linear-gradient(to bottom, #a7f3d0, #f3f4f6);
+  background: linear-gradient(45deg, #a7f3d0, #f3f4f6);
   /* background-repeat: no-repeat; */
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 html,
 body {
   height: 100%;
+
   /* color: #f3f4f6; */
 }
 .thickness {
-  border-radius: 20%;
-  height: 5vh;
+  /* border-radius: 50%; */
+  height: 1rem;
   background: black;
 }
 .container {
-  margin-left: 2.5rem;
+  margin-left: 10%;
+  width: fit-content;
 }
-input,
+
+input {
+  background: transparent;
+  border: none;
+  margin-bottom: 4vmin;
+  /* border: 2px solid #a7f3d0; */
+  border-radius: 2rem;
+  margin-left: 2vmin;
+}
 button {
   background: transparent;
   border: none;

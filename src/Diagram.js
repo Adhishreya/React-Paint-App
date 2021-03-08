@@ -8,7 +8,8 @@ function Diagram() {
   // const [color, setColor] = useColor("hex", "#121212");
   // const c = "#FCA5A5";
   const style = {
-    width: brush + "px"
+    width: brush + "vw",
+    background: canvas
   };
   console.log(style.width);
   return (
@@ -17,9 +18,9 @@ function Diagram() {
         ref={(canvasDraw) => (this.modify = canvasDraw)}
         brushColor={canvas}
         brushRadius={brush}
-        canvasHeight="40rem"
+        canvasHeight="50vh"
         hideGrid={true}
-        canvasWidth="20rem"
+        canvasWidth="80vw"
       />
       {/* <button
         onClick={() => {
@@ -55,6 +56,7 @@ function Diagram() {
       <br />
       <label>Colour picker</label>
       <input
+        style={{ background: { canvas } }}
         type="color"
         value={canvas}
         onChange={(event) => {
@@ -73,6 +75,7 @@ function Diagram() {
           setBrush(event.target.value);
         }}
       /> */}
+      <div className="thickness" style={style}></div>
       <input
         min="2"
         max="50"
@@ -82,7 +85,6 @@ function Diagram() {
           setThick(event.target.value);
         }}
       />
-      <div className="thickness" style={style}></div>
     </div>
   );
 }
