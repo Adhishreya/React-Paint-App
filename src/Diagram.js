@@ -8,8 +8,9 @@ function Diagram() {
   // const [color, setColor] = useColor("hex", "#121212");
   // const c = "#FCA5A5";
   const style = {
-    width: brush + "vw",
-    background: canvas
+    width: brush + "px",
+    background: canvas,
+    marginLeft: "50%"
   };
   console.log(style.width);
   return (
